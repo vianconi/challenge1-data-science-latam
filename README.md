@@ -57,8 +57,6 @@ A continuación se muestran ejemplos típicos que genera el script:
 🚚 La tienda con el menor costo promedio de envío fue: Tienda 4 con 23459.46
 ```
 
-> *(Opcional: podés agregar gráficos usando librerías como `matplotlib` o `seaborn` si lo deseás más adelante.)*
-
 ---
 
 ## 🚀 Instrucciones para ejecutar la app
