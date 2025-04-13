@@ -1,0 +1,38 @@
+{
+    "ingresos": {
+        "Tienda 1": 1150880400.0,
+        "Tienda 2": 1116343500.0,
+        "Tienda 3": 1098019600.0,
+        "Tienda 4": 1038375700.0
+    },
+    "categorias": {
+        "Tienda 1": "Muebles",
+        "Tienda 2": "Muebles",
+        "Tienda 3": "Muebles",
+        "Tienda 4": "Muebles"
+    },
+    "calificaciones": {
+        "Tienda 1": 3.976685036032217,
+        "Tienda 2": 4.037303942348453,
+        "Tienda 3": 4.048325561678677,
+        "Tienda 4": 3.9957591178965224
+    },
+    "producto_mas_vendido": {
+        "Tienda 1": "TV LED UHD 4K",
+        "Tienda 2": "Iniciando en programaci\u00f3n",
+        "Tienda 3": "Kit de bancas",
+        "Tienda 4": "Cama box"
+    },
+    "producto_menos_vendido": {
+        "Tienda 1": "Auriculares con micr\u00f3fono",
+        "Tienda 2": "Juego de mesa",
+        "Tienda 3": "Bloques de construcci\u00f3n",
+        "Tienda 4": "Guitarra el\u00e9ctrica"
+    },
+    "envio_promedio": {
+        "Tienda 1": 26018.60958033065,
+        "Tienda 2": 25216.235693090293,
+        "Tienda 3": 24805.680373039424,
+        "Tienda 4": 23459.457167090754
+    }
+}

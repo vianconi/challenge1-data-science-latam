@@ -1,12 +1,13 @@
+import json
 import pandas as pd
 
 # Diccionarios para guardar los resultados por tienda
-total_revenue_by_store = {}
-most_popular_category_by_store = {}
-average_rating_by_store = {}
-most_sold_product_by_store = {}
-least_sold_product_by_store = {}
-average_shipping_cost_by_store = {}
+total_revenue_by_store = {}  # ingresos_totales_por_tienda
+most_popular_category_by_store = {}  # categoria_mas_popular_por_tienda
+average_rating_by_store = {}  # calificacion_promedio_por_tienda
+most_sold_product_by_store = {}  # producto_mas_vendido_por_tienda
+least_sold_product_by_store = {}  # producto_menos_vendido_por_tienda
+average_shipping_cost_by_store = {}  # costo_promedio_envio_por_tienda
 
 # Recorremos los archivos de las 4 tiendas
 for store_number in range(1, 5):
@@ -71,3 +72,14 @@ if average_rating_by_store:
 if average_shipping_cost_by_store:
     lowest_shipping_store = min(average_shipping_cost_by_store, key=average_shipping_cost_by_store.get)
     print(f"🚚 La tienda con el menor costo promedio de envío fue: {lowest_shipping_store} con {average_shipping_cost_by_store[lowest_shipping_store]:.2f}")
+
+
+with open("resultados.json", "w") as f:
+    json.dump({
+        "ingresos": total_revenue_by_store,
+        "categorias": most_popular_category_by_store,
+        "calificaciones": average_rating_by_store,
+        "producto_mas_vendido": most_sold_product_by_store,
+        "producto_menos_vendido": least_sold_product_by_store,
+        "envio_promedio": average_shipping_cost_by_store
+    }, f, indent=4)
